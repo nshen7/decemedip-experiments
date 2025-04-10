@@ -15,7 +15,10 @@ smr_w_sigma.df     <- data.frame()
 
 for (CELLTYPE in 7:25) {
   for (COVERAGE in 1:3) {
+# for (CELLTYPE in 13) {
+#   for (COVERAGE in 1) {
     for (PROPORTION in c(0.01, seq(0.05, 0.5, 0.05))) {
+      # for (SEED in 1) {
       for (SEED in 1:10) {
         
         name_seg <- paste0('_cellType', CELLTYPE, '_cov', COVERAGE, '_prop', PROPORTION, '_seed', SEED)
